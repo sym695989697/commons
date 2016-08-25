@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+	http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+	<!-- 定义应用名称 -->
+	<dubbo:application name="upp-base-service" />
+
+	<!-- 定义注册中心 类型和地址 -->
+	<dubbo:registry protocol="zookeeper"
+		address="192.168.100.154:2181,192.168.100.155:2181,192.168.100.157:2181" />
+
+	<!-- 定义协议 -->
+	<dubbo:protocol name="dubbo" port="32222" threadpool="cached"
+		threads="10" />
+
+	<!-- 本地bean接口及实现，普通的spring bean -->
+	<!--bean id="helloService" class="com.ctfo.jcyf.dubbo.loadbalance.api.HelloServiceImpl" 
+		/ -->
+
+	<!-- 对外服务封装配置，dubbo接口 -->
+	<!--dubbo:service interface="com.ctfo.upp.account.demo.HelloService"
+		ref="helloService" version="1.0.0" protocol="dubbo" owner="upp" group="uppAccount" /-->
+
+
+
+</beans>

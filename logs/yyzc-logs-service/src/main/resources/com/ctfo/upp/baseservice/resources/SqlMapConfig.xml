@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE sqlMapConfig      
+    PUBLIC "-//ibatis.apache.org//DTD SQL Map Config 2.0//EN"      
+    "http://ibatis.apache.org/dtd/sql-map-config-2.dtd">
+
+<sqlMapConfig>
+	<settings useStatementNamespaces="true" />
+	<!-- base service dao's bean -->
+	<sqlMap resource="com/ctfo/upp/baseservice/dao/sqlmap/UPParam_SqlMap.xml" />
+	<sqlMap resource="com/ctfo/upp/baseservice/dao/sqlmap/UPPlatform_SqlMap.xml" />
+	<sqlMap resource="com/ctfo/upp/baseservice/dao/sqlmap/UPPlatformCallbackUrl_SqlMap.xml" />
+</sqlMapConfig>

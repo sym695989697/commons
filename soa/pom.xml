@@ -1,0 +1,23 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	
+	<parent>
+		<groupId>com.sinoiov.yyzc.commons</groupId>
+		<artifactId>yyzc-commons</artifactId>
+		<version>1.0.0</version>
+	</parent>
+	
+	<groupId>com.sinoiov.yyzc.commons</groupId>
+	<artifactId>yyzc-soa</artifactId>
+	<version>1.0.0</version>
+	<packaging>pom</packaging>
+	<name>yyzc-sao</name>
+	<description>yyzc-sao</description>
+	
+	<modules>
+		<module>yyzc-soa-hessian</module>
+		<module>yyzc-soa-support</module>
+	</modules>
+	
+</project>

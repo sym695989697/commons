@@ -1,0 +1,23 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	
+	<parent>
+		<groupId>com.sinoiov.yyzc.commons</groupId>
+		<artifactId>yyzc-commons</artifactId>
+		<version>1.0.0</version>
+	</parent>
+	
+	<groupId>com.sinoiov.yyzc.commons</groupId>
+	<artifactId>yyzc-mobile</artifactId>
+	<version>1.0.0</version>
+	<packaging>pom</packaging>
+	<name>yyzc-mobile</name>
+	<description>运营支撑手机服务端api包</description>
+	
+	<modules>
+		<module>yyzc-mobile-api</module>
+		<module>yyzc-mobile-client</module>
+	</modules>
+	
+</project>

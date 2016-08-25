@@ -1,0 +1,23 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com.sinoiov.yyzc.commons</groupId>
+		<artifactId>yyzc-commons</artifactId>
+		<version>1.0.0</version>
+	</parent>
+
+	<groupId>com.sinoiov.yyzc.commons</groupId>
+	<artifactId>interface-pub</artifactId>
+	<version>1.0.0</version>
+	<packaging>pom</packaging>
+	<name>interface-pub</name>
+	<description>接口发布系统</description>
+	
+	<modules>
+		<module>interface-pub-support</module>
+		<module>xxx-interface-publish-app</module>
+	</modules>
+
+</project>

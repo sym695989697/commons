@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE abatorConfiguration PUBLIC "-//Apache Software Foundation//DTD Abator for iBATIS Configuration 1.0//EN" "http://ibatis.apache.org/dtd/abator-config_1_0.dtd" >
+<abatorConfiguration >
+  <abatorContext generatorSet="com.ctfo.ibatis.abator.extend.Java2OracleGeneratorSet">
+    
+    <jdbcConnection driverClass="oracle.jdbc.OracleDriver" connectionURL="jdbc:oracle:thin:@192.168.110.170:1521:orcl" userId="quartz" password="MGyTozr9AqsIcVha" >
+    	<classPathEntry location="E:\ojdbc14.jar" />
+    </jdbcConnection>
+    
+    
+    
+    <javaModelGenerator  targetPackage="com.ctfo.generated_src.bean" targetProject="vims-quartz-service/src/main/java" >
+    	<property name="rootClass" value="com.ctfo.quartz.bean.BaseSerializable" />
+    	
+    	<property name="enableSubPackages" value="false" />
+    </javaModelGenerator>
+    
+    <sqlMapGenerator targetPackage="com.ctfo.quartz.sqlmap" targetProject="vims-quartz-service/src/main/resources" />
+    
+    <daoGenerator targetPackage="com.ctfo.generated_src.dao" targetProject="vims-quartz-service/src/main/java" type="SPRING-ORACLE" />
+
+    <table schema="quartz" tableName="QRTZ_INVOKE_LOG" modelType="flat" domainObjectName="InvokeLog">	
+   			<property name="ignoreQualifiersAtRuntime" value="true" />
+    </table>
+    
+    <table schema="quartz" tableName="QRTZ_TRIGGERS" modelType="flat" domainObjectName="Triggers">	
+   			<property name="ignoreQualifiersAtRuntime" value="true" />
+    </table>
+    
+  </abatorContext>
+</abatorConfiguration>

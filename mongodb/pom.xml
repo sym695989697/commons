@@ -1,0 +1,27 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	
+	<parent>
+		<groupId>com.sinoiov.yyzc.commons</groupId>
+		<artifactId>yyzc-commons</artifactId>
+		<version>1.0.0</version>
+	</parent>
+	
+	<groupId>com.sinoiov.yyzc.commons</groupId>
+	<artifactId>yyzc-mongodb</artifactId>
+	<version>1.0.0</version>
+	<packaging>pom</packaging>
+	<name>yyzc-mongodb</name>
+	<description>运营支撑通用MongoDB的ORM服务</description>
+	
+	<modules>
+		<module>yyzc-fileservice-v3</module>
+		<!-- <module>yyzc-fileservice-v2</module> -->
+		<!-- <module>yyzc-mongodb-driver</module> -->
+		<!-- <module>yyzc-mongodb-support</module>
+		<module>yyzc-mongodb-intf</module>
+		<module>yyzc-mongodb-service</module> -->
+	</modules>
+	
+</project>

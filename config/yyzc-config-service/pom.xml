@@ -1,0 +1,85 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.sinoiov.yyzc.commons</groupId>
+		<artifactId>yyzc-config</artifactId>
+		<version>1.0.0</version>
+	</parent>
+	
+	<artifactId>yyzc-config-service</artifactId>
+	<version>1.0.0.SNAPSHOT</version>
+	
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<version.spring>3.2.4.RELEASE</version.spring>
+		<version.config-support>1.0.0-SNAPSHOT</version.config-support>
+		<version.fileService>3.1.0</version.fileService>
+		<version.soa-hessian>1.0.0-SNAPSHOT</version.soa-hessian>
+		<version.yyzc-common>1.0.0</version.yyzc-common>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.sinoiov.yyzc.commons</groupId>
+			<artifactId>yyzc-config-support</artifactId>
+			<version>${version.config-support}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.sinoiov.yyzc.commons</groupId>
+			<artifactId>yyzc-soa-hessian</artifactId>
+			<version>${version.soa-hessian}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.ctfo.csm</groupId>
+			<artifactId>FileService</artifactId>
+			<version>${version.fileService}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-aop</artifactId>
+			<version>${version.spring}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-beans</artifactId>
+			<version>${version.spring}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${version.spring}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+			<version>${version.spring}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>${version.spring}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context-support</artifactId>
+			<version>${version.spring}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+			<version>${version.spring}</version>
+		</dependency>
+	</dependencies>
+	
+	<build>
+		<finalName>config-service</finalName>
+	</build>
+	
+	<name>yyzc-config-service</name>
+	
+	<description>运营支撑-配置管理服务后台service</description>
+	<packaging>war</packaging>
+</project>
